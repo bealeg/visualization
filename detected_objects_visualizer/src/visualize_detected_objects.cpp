@@ -49,7 +49,7 @@ VisualizeDetectedObjects::VisualizeDetectedObjects() : arrow_height_(0.5), label
   private_nh_.param<double>("arrow_speed_threshold", arrow_speed_threshold_, 0.25);
   ROS_INFO("[%s] arrow_speed_threshold: %.2f", __APP_NAME__, arrow_speed_threshold_);
 
-  private_nh_.param<double>("marker_display_duration", marker_display_duration_, 0.2); //0.2
+  private_nh_.param<double>("marker_display_duration", marker_display_duration_, 0.5); //0.2
   ROS_INFO("[%s] marker_display_duration: %.2f", __APP_NAME__, marker_display_duration_);
 
   std::vector<double> color;
